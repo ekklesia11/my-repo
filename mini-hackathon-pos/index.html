@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="elLogo">
+      <img id="logoimg" src="img/logo.png" />
+    </div>
+
+    <div id="container">
+      <!-- 메뉴파트 -->
+      <div id="elMenu">
+        <div id="elRoom">
+          <button class="elRoomBtn" id="threeStar" data-price="250">
+            <img class="elRoomUp" src="img/3stars.jpg" />
+            <div class="elRoomDown">
+              <p>★★★☆☆</p>
+              <p>SPECIAL 3 STARS</p>
+              <p>$ 250 per night</p>
+            </div>
+          </button>
+          <button class="elRoomBtn" id="fourStar" data-price="400">
+            <img class="elRoomUp" src="img/4stars.jpg" />
+            <div class="elRoomDown">
+              <p>★★★★☆</p>
+              <p>LUXURY 4 STARS</p>
+              <p>$ 400 per night</p>
+            </div>
+          </button>
+          <button class="elRoomBtn" id="fiveStar" data-price="550">
+            <img class="elRoomUp" src="img/5stars.jpg" />
+            <div class="elRoomDown">
+              <p>★★★★★</p>
+              <p>SPLENDID 5 STARS</p>
+              <p>$ 550 per night</p>
+            </div>
+          </button>
+          <button class="elRoomBtn" id="pentHouse" data-price="990">
+            <img class="elRoomUp" src="img/penthouse.jpg" />
+            <div class="elRoomDown">
+              <p>★★★★★★★★★★</p>
+              <p>MAGNIFICENT PENTHOUSE</p>
+              <p>$ 990 per night</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- 옵션파트 -->
+        <div id="elOption" hidden="true">
+          <div id="optionTitle">Option</div>
+          <div id="optionList">
+            <div class="eachOption">
+              <h3>Stay night</h3>
+              <select id="stayNightOption">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+              </select>
+            </div>
+            <div class="eachOption">
+              <h3>Guest no.</h3>
+              <select id="guestNoOption" data-price="10">
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+            <div class="eachOption">
+              <h3>Room service</h3>
+              <select id="roomServiceOption">
+                <option data-price="30">A class</option>
+                <option data-price="50">B class</option>
+              </select>
+            </div>
+            <div class="eachOption">
+              <h3>Breakfast</h3>
+              <select id="breakfastOption" data-price="10">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+          <div id="openOrderListBtn">
+            <button id="addOption">옵션선택 완료</button>
+            <button id="backToList">메뉴로 돌아가기</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 오더파트 -->
+      <div id="elorder">
+        <div id="orderHead">
+          ORDER LIST
+        </div>
+        <div id="orderBody">
+          <div id="orderList">
+            <div id="selectedOption">
+              <ul>
+                <li id="selectedRoom"></li>
+              </ul>
+            </div>
+            <div id="summaries">
+              <dl class="summary">
+                <dt>stay night :</dt>
+                <dd>0</dd>
+                <dt>guest no. :</dt>
+                <dd>0</dd>
+                <dt>room service :</dt>
+                <dd>Class</dd>
+                <dt>breakfast :</dt>
+                <dd>No</dd>
+              </dl>
+            </div>
+          </div>
+          <div id="totals">
+            <dl class="total">
+              <dt>Total : $</dt>
+              <dd id="totalPrice">0</dd>
+            </dl>
+          </div>
+        </div>
+        <div id="payment">
+          <button id="pay">결제하기</button>
+        </div>
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="logic.js"></script>
+  </body>
+</html>

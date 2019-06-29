@@ -1,0 +1,229 @@
+@media screen and (min-width: 800px) {
+  #container {
+    display: flex;
+  }
+  #elMenu {
+    width: 60%;
+  }
+  #elorder {
+    position: relative;
+    left: 25px;
+    width: 37.7%;
+  }
+}
+@media screen and (max-width: 799px) {
+  #container {
+    display: block;
+  }
+  #elMenu {
+    width: 100%;
+  }
+  #elorder {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    padding-top: 5px;
+  }
+}
+
+/*메뉴부분*/
+#elMenu {
+  background-color: #fff;
+  position: relative;
+  border-radius: 15px;
+  padding: 10px 0px 10px 0px;
+}
+
+.elRoomBtn {
+  width: 231px;
+  height: 231px;
+  margin: 15px 15px 15px 15px;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+}
+
+.elRoomUp {
+  width: 230px;
+  height: 150px;
+  background-color: #ff9650;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.elRoomDown {
+  width: 230px;
+  height: 80px;
+  background-color: #fff;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 0.5px solid #eeeeee;
+  font-weight: 900;
+}
+
+#elRoom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 옵션부분 */
+#elOption {
+  display: none;
+}
+#optionTitle {
+  background-color: #328eff;
+  margin: 15px 30px 15px 30px;
+  border-radius: 15px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+}
+#optionList {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.eachOption {
+  margin-left: 30px;
+}
+select {
+  border-radius: 15px;
+  font-size: 16px;
+}
+#openOrderListBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#addOption {
+  width: 150px;
+  height: 60px;
+  background-color: #328eff;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin: 10px;
+}
+#backToList {
+  width: 150px;
+  height: 60px;
+  background-color: #ff9650;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin: 10px;
+}
+
+/* 오더부분 */
+#elorder {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+#orderHead {
+  background-color: #328eff;
+  margin: 25px 30px 25px 30px;
+  border-radius: 15px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+}
+
+#selectedOption {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+#summaries {
+  height: 110px;
+  background-color: #fff;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.summary {
+  font-size: 16px;
+  font-weight: 500;
+}
+.summary > dt {
+  float: left;
+  margin-left: 25px;
+}
+.summary > dd {
+  margin-left: 150px;
+  color: #328eff;
+  font-weight: 700;
+}
+
+#totals {
+  height: 60px;
+  background-color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.total > dt {
+  float: left;
+  margin-left: 25px;
+}
+.total > dd {
+  margin-left: 150px;
+}
+.total {
+  margin-top: 20px;
+}
+
+#payment {
+  display: flex;
+  justify-content: center;
+  margin: 20px 10px 0px 10px;
+  padding-bottom: 15px;
+}
+#pay {
+  width: 150px;
+  height: 60px;
+  background-color: #328eff;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin-right: 10px;
+}
+#addtionalOption {
+  width: 150px;
+  height: 60px;
+  background-color: #ff9650;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/*전체백그라운드 부분*/
+body {
+  margin: 0;
+}
+#container {
+  background-color: #eeeeee;
+  padding: 25px;
+  height: 100%;
+}
+
+#logoimg {
+  margin: 30px 0px 10px 50px;
+}
